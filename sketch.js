@@ -144,7 +144,7 @@ function draw(){
   }
   
   trex.collide(ground2);
-  text("Score : " + score,500,20);
+  text("Score : " + score,width-100,20);
   //console.log("This is " , gamestate);
   
   text("Highscore : " + highscore, 50,20);
@@ -159,7 +159,7 @@ function spawn_clouds(){
   
   if(frameCount % 100 === 0){
   
-    cloud = createSprite(650,50,30,30);
+    cloud = createSprite(width+50,height-550,30,30);
     cloud.addImage(cloud_image);
     cloud.scale = 0.9;
     cloud.velocityX = -2;
